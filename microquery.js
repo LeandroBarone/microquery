@@ -98,6 +98,7 @@ class SelectedElements {
 
 	click(fn) {
 		this.els.forEach(el => el.click(fn));
+		return this;
 	}
 }
 
@@ -169,5 +170,6 @@ class SelectedElement {
 
 	click(fn) {
 		this.el.addEventListener('click', fn);
+		return this;
 	}
 }
