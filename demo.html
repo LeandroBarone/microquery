@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>Lorem ipsum dolor sit amet</h1>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, a?</p>
+	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, cupiditate?</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, cumque.</p>
+	<p><button id="btnAlternarColores">Alternar colores</button></p>
+	<script src="microquery.js"></script>
+	<script>
+		const colores = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+		const unoAlAzar = arr => arr[Math.floor(Math.random() * arr.length)];
+
+		$("#btnAlternarColores").click(() => {
+			$('h1, p').css('color', unoAlAzar(colores));
+			$('body').css('background', unoAlAzar(colores));
+		});
+	</script>
+</body>
+</html>
