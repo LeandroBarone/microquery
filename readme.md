@@ -1,8 +1,10 @@
 # Microquery 0.1
 
-Una versión infinitesimal de jQuery con fines didácticos.
+Una versión infinitesimal de jQuery con fines didácticos. 
 
-Es básicamente un wrapper para queryElementAll.
+Es básicamente un wrapper para querySelectorAll con algunos métodos que uso mucho.
+
+Tiene la misma API que jQuery.
 
 ## Uso
 
