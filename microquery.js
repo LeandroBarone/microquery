@@ -9,6 +9,7 @@
 // show, hide, toggle
 // hasClass, showClass, removeClass, toggleClass
 // toArray
+// click
 const $ = arg => new SelectedElements(arg);
 
 // La clase SelectedElements es básicamente un array de objetos SelectedElement
