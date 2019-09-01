@@ -55,7 +55,7 @@ class SelectedElements {
 		if (typeof v === 'undefined')
 			return (this.els.length) ? this.els[0].css(k) : false;
 		else {
-			this.els.forEach(el => el.attr(k, v));
+			this.els.forEach(el => el.css(k, v));
 			return this;
 		}
 	}
