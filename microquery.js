@@ -41,8 +41,10 @@ class SelectedElements {
 	attr(k, v) {
 		if (typeof v === 'undefined')
 			return (this.els.length) ? this.els[0].attr(k) : false;
-		else
+		else {
 			this.els.forEach(el => el.attr(k, v));
+			return this;
+		}
 	}
 
 	// Devuelve o configura un estilo CSS
@@ -52,8 +54,10 @@ class SelectedElements {
 	css(k, v) {
 		if (typeof v === 'undefined')
 			return (this.els.length) ? this.els[0].css(k) : false;
-		else
-			this.els.forEach(el => el.css(k, v));
+		else {
+			this.els.forEach(el => el.attr(k, v));
+			return this;
+		}
 	}
 
 	// Muestra u oculta los elementos
