@@ -20,7 +20,7 @@ $elementos.toArray().map(el => el.remove());
 ## API
 
 ```javascript
-// Devuelve un array con todos los elementos
+// Devuelve un array ordinario con todos los elementos
 $('#elem').toArray();
 // Devuelve o establece una propiedad CSS
 $('#elem').css('propiedad', ['valor']);
@@ -35,4 +35,6 @@ $('#elem').hasClass('clase1 [clase2 ...]');
 $('#elem').addClass('clase1 [clase2 ...]');
 $('#elem').removeClass('clase1 [clase2 ...]');
 $('#elem').toggleClass('clase1 [clase2 ...]');
+// Añade event listeners
+$('#elem').click(() => alert('Hola, mundo!');)
 ```
