@@ -38,5 +38,5 @@ $('#elem').addClass('clase1 [clase2 ...]');
 $('#elem').removeClass('clase1 [clase2 ...]');
 $('#elem').toggleClass('clase1 [clase2 ...]');
 // Añade event listeners
-$('#elem').click(() => alert('Hola, mundo!');)
+$('#elem').click(evt => alert('Hola, mundo!'));
 ```

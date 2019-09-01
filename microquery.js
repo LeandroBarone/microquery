@@ -21,7 +21,7 @@ class SelectedElements {
 	}
 
 	// Toma un query
-	// Devuelve un array de elementos obtenidos con querySelectorAll
+	// Devuelve un array de objetos SelectedElement
 	// SelectedElements.queryToArray('nav ul span');
 	static queryToArray(arg) {
 		const nodelist = document.querySelectorAll(arg);
@@ -29,7 +29,7 @@ class SelectedElements {
 		return nodelist_arr.map(el => new SelectedElement(el));
 	}
 
-	// Devuelve un array común con todos los elementos
+	// Devuelve un array común con todos los nodos seleccionados
 	toArray() {
 		return this.els.map(el => el.el);
 	}
@@ -96,6 +96,8 @@ class SelectedElements {
 		return this;
 	}
 
+	// Agrega un event listener
+	// $('#elemento').click(evt => alert('Hola, mundo!'));
 	click(fn) {
 		this.els.forEach(el => el.click(fn));
 		return this;
